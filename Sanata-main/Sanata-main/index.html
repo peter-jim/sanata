@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preload" href="/assets/img/bg1.webp" as="image">
+
+</head>
+
+<body class=" bg-[#0C0219] overflowx-hidden scroll">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <div id="header" class="z-10 relative"></div>
+
+
+
+    <main class="relative">
+
+        <section class="relative h-[80vh] sm:h-[840px] flex justify-center items-center w-full" id="hero" style="background-image: url('/assets/img/bg1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="mx-8 sm:mx-none flex flex-col items-center justify-center h-full relative">
+                <h1 class="Inconsolata text-3xl sm:text-4xl lg:text-6xl text-white mb-5 sm:mb-8 font-semibold text-center">Introducing Sanata</h1>
+                <p class="text-xl sm:text-2xl font-normal text-white text-center max-w-4xl mb-12 sm:mb-20">Sanata is a protocol that ensures strong data durability in a decentralized, permissionless environment. It utilizes fountain code to transform data into an endless sequence of encoded fragments, enabling robustness against data loss.</p>
+            </div>
+        </section>
+
+        <section class="mx-4 sm:mx-auto relative pt-16 sm:pt-36 pb-32 sm:pb-52" id="defination">
+            <div class="h-12 sm:h-20 -top-12 sm:-top-20 w-full absolute">
+                <div class="py-6 sm:py-0 flex items-center max-w-5xl sm:mx-auto border-b border-dotted border-white h-full">
+                    <h2 class="flex justify-center text-xs sm:text-base text-[#7331FF] ">01</h2>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-[80px] sm:max-w-5xl sm:mx-auto mb-8 sm:mb-20">
+                <div class="sm:w-[320px] h-full">
+                    <h3 class=" text-white text-xl sm:text-3xl mb-6 sm:mb-10">Key Benefits of Sanata Protocol</h3>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:max-w-5xl sm:mx-auto mb-16">
+                <div class="w-full h-64 py-2 px-6 flex flex-col justify-center items-start gap-8" style="background-image: url('/assets/img/sectionbg01.png');background-size: cover;">
+                    <p class="text-white text-[32px] font-semibold">Durable</p>
+                    <p class="text-white text-base font-semibold">Offers close-to-ideal mean-time-to-data-loss (MTTDL) with minimal storage redundancy.</p>
+                </div>
+                <div class="w-full h-64 py-2 px-6 flex flex-col justify-center items-start gap-8" style="background-image: url('/assets/img/sectionbg02.png');background-size: cover;">
+                    <p class="text-white text-[32px] font-semibold">Decentralized</p>
+                    <p class="text-white text-base font-semibold">Fully decentralized process for encoding generation and storage node selection.</p>
+                </div>
+                <div class="w-full h-64 py-2 px-6 flex flex-col justify-center items-start gap-8" style="background-image: url('/assets/img/sectionbg03.png');background-size: cover;">
+                    <p class="text-white text-[32px] font-semibold">Secure</p>
+                    <p class="text-white text-base font-semibold">Designed to withstand dynamic Byzantine behaviors and targeted attacks through random selection of an infinite sequence of storage nodes.</p>
+                </div>
+                <div class="w-full h-64 py-2 px-6 flex flex-col justify-center items-start gap-8" style="background-image: url('/assets/img/sectionbg04.png');background-size: cover;">
+                    <p class="text-white text-[32px] font-semibold">Scalable</p>
+                    <p class="text-white text-base font-semibold">Efficiently scales up to over 10,000 nodes and maintains high performance levels.</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="mx-4 sm:mx-auto relative pt-16 sm:pt-12 pb-32 sm:pb-52" id="tech">
+            <div class="h-12 sm:h-20 -top-12 sm:-top-20 w-full absolute">
+                <div class="py-6 sm:py-0 flex items-center max-w-5xl sm:mx-auto border-b border-dotted border-white h-full">
+                    <h2 class="flex justify-center text-xs sm:text-base text-[#7331FF] ">02</h2>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-[80px] sm:max-w-5xl sm:mx-auto mb-8 sm:mb-16">
+                <div class="sm:w-[320px] h-full">
+                    <h3 class=" text-white text-xl sm:text-3xl">Technical innovation that drives Sanata Protocol</h3>
+                </div>
+            </div>
+            <div class="flex flex-col sm:max-w-5xl sm:mx-auto mb-16 sm:mb-20">
+                <div class="h-full w-full pr-16">
+                    <p class="text-base text-white sm:text-xl">Sanata employs the rateless feature of fountain codes for data encoding, coupled with a random selection mechanism for an infinite sequence of storage nodes. This design ensures data preservation even amid unpredictable and malicious network conditions and achieves impressive durability and scalability.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <div id="footer"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
