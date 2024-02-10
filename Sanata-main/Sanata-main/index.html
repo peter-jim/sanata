@@ -20,7 +20,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <div id="header" class="z-10 relative"></div>
+    <header id="header-inner" class="absolute top-0 w-full bg-[#0A0218]">
+        <div
+            id="menuwrapper" class="container mx-auto px-4 sm:px-12 flex justify-between items-center h-20 max-w-none">
+    
+            <a href="/" class="flex items-center">
+                <img src="./assets/img/logo.jpg" alt="Logo" class="ml-4 h-8">
+                <p class="text-white text-4xl font-bold">Sanata</p>
+               
+            </a>
+    
+                <button id="menuButton" class="w-10 h-10 flex justify-center items-center text-white focus:outline-none sm:hidden">
+                    <img src="/assets/img/menu icon.svg" alt="menu icon" class="w-6 h-6"></button>
+    
+                    <ul id="menu" class="hidden sm:flex space-x-6">
+                        <li>
+                            <a href="/#hero" class="text-white hover:text-gray-300 ">What is Sanata</a>
+                        </li>
+                        <li>
+                            <a href="/#defination" class="text-white hover:text-gray-300">Why is Sanata different</a>
+                        </li>
+                        <li>
+                            <a href="/#tech" class="text-white hover:text-gray-300">Technical Innovation</a>
+                        </li>
+                        </ul>
+                    </ul>
+                </div>
+    
+            </header>
+    
 
 
 
@@ -82,10 +110,51 @@
             </div>
         </section>
 
+        <footer
+        class="sm:h-40 px-4 sm:px-12 pb-12 flex flex-col sm:flex-row sm:justify-between items-start sm:items-end gap-10 sm:gap-0 relative">
+
+
+            <div class="flex flex-col gap-2 sm:gap-4">
+                <div class="flex flex-col gap-1">
+                    <a href="/#hero" target="_blank">
+                        <h3 class="text-white  text-sm sm:text-base uppercase">What is Sanata</h3>
+                    </a>
+                    <a href="/#defination" target="_blank">
+                        <h3 class="text-white  text-sm sm:text-base uppercase">Why is Sanata different</h3>
+                    </a>
+                    <a href="/#tech" target="_blank">
+                        <h3 class="text-white  text-sm sm:text-base uppercase">Technical Innovation</h3>
+                    </a>
+                    
+                </div>
+            </div>
+        
+            <a href="https://advaita.xyz/" class="flex gap-4">
+                <p class="text-white text-xs uppercase">Built by Sanata </p>
+            </a>
+        </footer>
+        
+
 
     </main>
-    <div id="footer"></div>
+
 
     <script src="./script.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollLinks = document.querySelectorAll("footer a[href^='/#']");
+
+            scrollLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var targetId = link.getAttribute("href").substring(2);
+                    var targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
